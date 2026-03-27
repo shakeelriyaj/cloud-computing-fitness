@@ -19,11 +19,7 @@ def analyze():
     rep_count = len(velocity)
     avg_velocity = sum(velocity) / len(velocity) if velocity else 0
 
-    if len(velocity) >= 2:
-        fatigue_score = max(0, velocity[0] - velocity[-1])
-    else:
-        fatigue_score = 0
-
+    fatigue_score = max(0, velocity[0] - velocity[-1]) if len(velocity) >= 2 else 0
     accel_range = max(accel) - min(accel) if accel else 0
     form_score = max(0, 100 - int(accel_range * 10))
 
