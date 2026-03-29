@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 GCP_ANALYTICS_URL = os.getenv(
     "GCP_ANALYTICS_URL",
-    "https://fitness-analytics-service-550653652814.us-central1.run.app/analyze"
+    "https://fitness-analytics-gcp-550653652814.us-central1.run.app/analyze"
 )
 
 HTML = """
