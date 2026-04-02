@@ -40,6 +40,7 @@ curl -X POST "https://fitness-analytics-service-550653652814.us-central1.run.app
 
 docker run -p 8080:8080 fitness-analytics-gcp
 
+ gcloud run services delete fitness-analytics-gcp --region=us-central1
   
 gcloud auth login
 gcloud config set project fitness-analytics-gcp
