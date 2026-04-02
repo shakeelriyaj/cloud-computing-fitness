@@ -19,16 +19,6 @@ gcloud run services add-iam-policy-binding fitness-analytics-service \
 
 https://fitness-analytics-service-550653652814.us-central1.run.app
 
-curl -X POST "https://fitness-analytics-service-550653652814.us-central1.run.app/analyze" \
-  -H "Content-Type: application/json" \
-  -d '{
-    "user_id": "user_001",
-    "exercise": "squat",
-    "accel_data": [1.2, 1.5, 1.4, 1.8, 1.6, 1.3],
-    "velocity": [0.62, 0.59, 0.55, 0.49, 0.44, 0.39],
-    "heart_rate": 152
-  }'
-
 
 curl -X POST "https://fitness-analytics-service-550653652814.us-central1.run.app/analyze" \
   -H "Content-Type: application/json" \
