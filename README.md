@@ -11,7 +11,7 @@ docker tag fitness-analytics-gcp us-central1-docker.pkg.dev/fitness-analytics-gc
 
 docker push us-central1-docker.pkg.dev/fitness-analytics-gcp/fitness-repo/fitness-analytics-gcp
 
-gcloud run services add-iam-policy-binding fitness-analytics-service1 \
+gcloud run services add-iam-policy-binding fitness-analytics-service \
   --member="allUsers" \
   --role="roles/run.invoker" \
   --region=us-central1
